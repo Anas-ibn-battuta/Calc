@@ -1,6 +1,6 @@
 """
 Program: Simple Calculator 
-
+Author: Anas Tawalbeh
 Simple calcuatro help the user calculate the basic 4 operations including:
 addition, subtraction, multiplication and division
 Significant constants
