@@ -65,11 +65,11 @@ Please type in the math operation you would like to complete:
 ''')
     if operator =='+':
         addition()
-    if operator =='-':
+    elif operator =='-':
         subtraction()
-    if operator =='*':
+    elif operator =='*':
         multiply() 
-    if operator =='/':
+    elif operator =='/':
         divide()
     else:
         print("Invalid operator\n")
