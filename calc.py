@@ -20,40 +20,42 @@ number1= number2= result= 0
 operator=''
 
 def addition():
-         global number1 number2
-        result=number1+number2
-        print(f"The sumation for the two values is equal to: ,{result}")
+    global number1, number2
+    result=number1+number2
+    print(f"The sumation for the two values is equal to: {result}")
 def subtraction():
-         global number1 number2
-        result=number1-number2
-        print(f"The sumation for the two values is equal to: ,{result}")
+    global number1, number2
+    result=number1-number2
+    print(f"The sumation for the two values is equal to: {result}")
 def multiply():
-         global number1 number2
-        result=number1*number2
-        print(f"The sumation for the two values is equal to: ,{result}")
+    global number1, number2
+    result=number1*number2
+    print(f"The sumation for the two values is equal to: {result}")
 def divide():
-         global number1 number2
-        result=number1/number2
-        print(f"The sumation for the two values is equal to: ,{result}")
+    global number1, number2
+    result=number1/number2
+    print(f"The sumation for the two values is equal to: {result}")
 def again():
-        calc_again = input('''
-        Do you want to calculate again?
-        Please type Y for YES or N for NO.
-        ''')
-        if calc_again.upper() == 'Y':
-                main()
+    calc_again = input('''
+    Do you want to calculate again?
+    Please type Y for YES or N for NO.
+    ''')
+    if calc_again.upper() == 'Y':
+        main()
 
-        elif calc_again.upper() == 'N':
-                sys.exit('See you later.')
-        else:
-                again()
+    elif calc_again.upper() == 'N':
+        sys.exit('See you later.')
+    else:
+        again()
 def validate_input():
+    global number1
     try:
         number1=float(input("Insert the first value\n"))
     except:
         print("Your first input is not a number\n")
         validate_input()
 def validate_second_input():
+    global number2
     try:
         number2=float(input("Insert the second value\n"))
     except:
@@ -68,17 +70,17 @@ Please type in the math operation you would like to complete:
 / for division
 ''')
     if operator =='+':
-         validate_input()
-         validate_second_input()
-         addition()
+        validate_input()
+        validate_second_input()
+        addition()
     elif operator =='-':
-         validate_input()
-         validate_second_input()
-         subtraction()
+        validate_input()
+        validate_second_input()
+        subtraction()
     elif operator =='*':
-         validate_input()
-         validate_second_input()
-         multiply() 
+        validate_input()
+        validate_second_input()
+        multiply() 
     elif operator =='/':
          validate_input()
          validate_second_input()
@@ -89,9 +91,10 @@ Please type in the math operation you would like to complete:
         validate_second_input()
         validate_operator()
 def main():
-        validate_operator()
-        again()
+    validate_operator()
+    again()
         
                 
 if __name__ == "__main__":
-         main()
+    main()
+       
