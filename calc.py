@@ -20,15 +20,19 @@ number1= number2= result= 0
 operator=''
 
 def addition():
+         global number1 number2
         result=number1+number2
         print(f"The sumation for the two values is equal to: ,{result}")
 def subtraction():
+         global number1 number2
         result=number1-number2
         print(f"The sumation for the two values is equal to: ,{result}")
 def multiply():
+         global number1 number2
         result=number1*number2
         print(f"The sumation for the two values is equal to: ,{result}")
 def divide():
+         global number1 number2
         result=number1/number2
         print(f"The sumation for the two values is equal to: ,{result}")
 def again():
