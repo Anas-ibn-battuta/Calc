@@ -56,6 +56,8 @@ def validate_second_input():
         print("Your first second is not a number\n")
         validate_input()
 def validate_operator():
+    validate_input()
+    validate_second_input()
     operator = input('''
 Please type in the math operation you would like to complete:
 + for addition
@@ -75,8 +77,6 @@ Please type in the math operation you would like to complete:
         print("Invalid operator\n")
         validate_operator()
 def main():
-        validate_input()
-        validate_second_input()
         validate_operator()
         again()
         
