@@ -56,8 +56,6 @@ def validate_second_input():
         print("Your first second is not a number\n")
         validate_second_input()
 def validate_operator():
-    validate_input()
-    validate_second_input()
     operator = input('''
 Please type in the math operation you would like to complete:
 + for addition
@@ -66,15 +64,25 @@ Please type in the math operation you would like to complete:
 / for division
 ''')
     if operator =='+':
-        addition()
+         validate_input()
+         validate_second_input()
+         addition()
     elif operator =='-':
-        subtraction()
+         validate_input()
+         validate_second_input()
+         subtraction()
     elif operator =='*':
-        multiply() 
+         validate_input()
+         validate_second_input()
+         multiply() 
     elif operator =='/':
-        divide()
+         validate_input()
+         validate_second_input()
+         divide()
     else:
         print("Invalid operator\n")
+        validate_input()
+        validate_second_input()
         validate_operator()
 def main():
         validate_operator()
