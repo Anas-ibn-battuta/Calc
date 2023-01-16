@@ -54,7 +54,7 @@ def validate_second_input():
         number2=float(input("Insert the second value\n"))
     except:
         print("Your first second is not a number\n")
-        validate_input()
+        validate_second_input()
 def validate_operator():
     validate_input()
     validate_second_input()
