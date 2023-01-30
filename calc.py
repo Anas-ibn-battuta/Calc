@@ -70,31 +70,23 @@ def validate_operator():
         * for multiplication
         /for division
         ''')
-        if operator =='+':
-            validate_input()
-            validate_second_input()
+    except:
+            validate_operator()
+def main():
+    validate_input()
+    validate_second_input()
+    validate_operator()
+    if operator =='+':
             addition()
         elif operator =='-':
-            validate_input()
-            validate_second_input()
             subtraction()
         elif operator =='*':
-            validate_input()
-            validate_second_input()
             multiply() 
         elif operator =='/':
-            validate_input()
-            validate_second_input()
             divide()
         else:
             print("Invalid operator\n")
             validate_operator()
-            validate_input()
-            validate_second_input()
-    except:
-            validate_operator()
-def main():
-    validate_operator()
     again()
         
                 
